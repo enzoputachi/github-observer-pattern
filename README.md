@@ -18,7 +18,7 @@ Adds a new phone number to the collection, providing error handling for invalid 
 telephone.addPhoneNumber("2347023232");
 ```
 
-#### erasePhoneNumber
+#### removePhoneNumber
 Removes a phone number from the collection, with error handling for non-existing entries.
 
 ```javascript
@@ -32,7 +32,7 @@ Initiates a phone call to the specified number, notifying observers. Error handl
 telephone.dialPhoneNumber("2347023232");
 ```
 
-#### enrollObserver
+#### addObserver
 Registers a new observer to receive notifications when a phone number is dialed.
 
 ```javascript
@@ -40,7 +40,7 @@ const observer1 = new PhoneObserver("observer1");
 telephone.enrollObserver(observer1);
 ```
 
-#### expelObserver
+#### removeObserver
 Removes an observer from the notification list.
 
 ```javascript
@@ -59,14 +59,14 @@ Creates a new instance of the PhoneObserver class, specifying a name.
 const observer1 = new PhoneObserver("observer1");
 ```
 
-#### inform
+#### notify
 Receives a notification when a phone number is dialed, displaying the observer's name and the dialed number.
 
 ```javascript
 observer1.inform("2347023232");
 ```
 
-#### represent
+#### toString
 Returns a string representation of the observer.
 
 ```javascript
